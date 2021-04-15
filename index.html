@@ -1,0 +1,71 @@
+!<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">Developer Survey</h1>
+  <main>
+    <p id="description">Please answer a few questions about your current position to help us collect data on the current state of technology.</p>
+    <form id="survey-form">
+      <ul>
+        <li class="row">
+          <label for="name" id="name-label">* Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </li>
+        <li class="row">
+          <label for="email" id="email-label">* Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </li>
+        <li class="row">
+          <label for="number" id="number-label">* Age:</label>
+          <input type="number" id="number" placeholder="Age" min="0" max="115" required>
+        </li>
+        <li class="row">
+          <label for="dropdown">Current position?</label>
+          <select name="dropdown" id="dropdown">
+            <option value="DevOps">DevOps</option>
+            <option value="QA">QA</option>
+            <option value="Development">Development</option>
+            <option value="Project">Project Management</option>
+          </select>
+        </li>
+        <li class="row">
+          <label for="radios">Current Salary:</label>
+          <ul>
+            <li><input name="radios" type="radio" value="15"> ₹15,000 &dash;  ₹18,000</li>
+            <li><input name="radios" type="radio" value="20"> ₹20,000 &dash;  ₹25,000</li>
+            <li><input name="radios" type="radio" value="18"> ₹18,000 &dash;  ₹20,000</li>
+            <li><input name="radios" type="radio" value="25"> ₹25,000 &dash;  ₹30,000</li>
+            <li><input name="radios" type="radio" value="30">&gt;  ₹30,000</li>
+          </ul>
+        </li>
+        <li class="row">
+          <label for="checkbox">How did you hear about this survey?</label>
+          <ul>
+            <li><input name="checkbox" type="checkbox" value="stack">Stack Overflow</li>
+            <li><input name="checkbox" type="checkbox" value="email">Email</li>
+            <li><input name="checkbox" type="checkbox" value="forum">Forum</li>
+            <li><input name="checkbox" type="checkbox" value="mail">Mail</li>
+            <li><input name="checkbox" type="checkbox" value="chatroom">Chatroom</li>
+          </ul>
+        </li>
+        <li class="row">
+          <label for="comments">Please write a brief description of you current job:</label>
+          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </li>
+        <li class="row">
+          <button id="submit" type="submit">Submit</button>
+        </li>
+      </ul>
+    </form>
+  </main>
+  
+</body>
+</html>
